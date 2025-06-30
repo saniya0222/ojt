@@ -48,7 +48,7 @@ const HomePage = () => {
             <div className="text">
             <p>Ready to explore our courses?</p>
             <div className="buttons">
-            <a href="/cources"><button>Explore Cources</button></a>
+            <a href="/courses"><button>Explore Cources</button></a>
             </div>
             </div>
             </div>
