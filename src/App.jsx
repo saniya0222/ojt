@@ -42,11 +42,29 @@ import CoursesPage from "./components/pages/CoursesPage";
 import NotFoundPage from "./components/pages/NotFoundPage";
 import './styles/Pages.css'
 import ChatbotComponent from "./components/Chatbot/ChatbotComponents";
+import { useState } from "react";
+import DeveloperInfoPopup from "./components/DeveloperInfo/DeveloperInfoPopup";
 const App = () => {
+  const [showPopup, setShowPopup] = useState(true);
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
 
   return(
     <>
+    <div>
+        {/* Your main application content */}
+        <DeveloperInfoPopup
+          show={showPopup}
+          onClose={handleClosePopup}
+          studentName="Saniya Durgappa Gadivaddar"
+          studentPhotoUrl="/Images/saniya.jpeg" // Path to their photo
+          uniqueMessage="Learned so much during this OJT! This app showcases my independent coding and deployment skills"
+        />
+      </div>
      <Router>
+        <header/>
       <Routes>
         <Route path="/" element ={<HomePage/>}/>
         <Route path="/home" element ={<HomePage/>}/>
