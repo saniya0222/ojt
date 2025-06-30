@@ -63,7 +63,7 @@ const CoursesPage = () => {
                 <h2>Program Details & Fee Structure (Annual)</h2>
                 <hr/>
                 
-                <table className="table course-table">
+                <table className="table courses-table">
                     <thead>
                         <tr>
                            <th>Program Type</th>
@@ -104,7 +104,7 @@ const CoursesPage = () => {
                 <div className="text">
                 <p>Have questions about a specific course?</p>
                 <div className="buttons">
-                <a className="btn" href="/contact"><button>Inquire About Cources</button></a>
+                <a className="btn" href="/contact"><button>Inquire About Courses</button></a>
                 
                 </div>
                 </div>
